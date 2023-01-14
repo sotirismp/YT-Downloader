@@ -47,7 +47,6 @@ router.get("/:q", async (req, res) => {
       } else {
         const url = `https://www.youtube.com/watch?v=${ids[i]}`;
         const info = await ytdl.getBasicInfo(ids[i]);
-        fs.writeFileSync("./info.txt", JSON.stringify(info));
         const { likes, dislikes } = (
           await axios.get(
             `https://returnyoutubedislikeapi.com/votes?videoId=${ids[i]}`
