@@ -1,4 +1,4 @@
 **/node_modules
 Database/database.json
 songs/
-build/
+public/

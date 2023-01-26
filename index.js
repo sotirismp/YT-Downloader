@@ -12,7 +12,7 @@ app.use(express.json());
 app.use(cors());
 app.use(router);
 
-app.use(express.static("build"));
+app.use(express.static("public"));
 app.use("/info", InfoRoute);
 app.use("/download", DownloadRoute);
 
